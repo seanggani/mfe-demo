@@ -4,6 +4,8 @@ import React, { useRef, useEffect } from "react";
 export default () => {
   const ref = useRef(null); //accesses a mutable ref to the child
 
+  console.log(mount);
+
   useEffect(() => {
     mount(ref.current);
   });
